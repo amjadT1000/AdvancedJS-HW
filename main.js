@@ -22,5 +22,16 @@ async function fetchData() {
 
 }
 
+function timing(){
+    document.getElementById("timeout_text").innerHTML = "<p style='color:orange'>The timeout has been started</p>";
+    setTimeout(()=> document.getElementById("timeout_text").innerHTML =
+         "<p style='color:green'>The timeout has been triggered!</p>", 3000)
+}
+
+function clear_timing(){
+    clearTimeout()
+    document.getElementById("timeout_text").innerHTML = "<p style='color:blue'>The timeout has been cleared</p>"
+}
+
 
 fetchData()

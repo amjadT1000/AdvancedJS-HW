@@ -24,20 +24,3 @@ async function fetchData() {
 
 
 fetchData()
-var timeOut;
-
-function timeOutTest() {
-    document.getElementById('timeout_text').innerHTML = "The timeout has been started..."
-    document.getElementById('timeout_text').style = ""
-    timeOut = setTimeout(() => {
-        document.getElementById('timeout_text').innerHTML = "The timeout has been triggered!"
-        document.getElementById('timeout_text').style = "color:green;"
-    }, 3000)
-}
-
-
-function clearTimeOutTest() {
-    clearTimeout(timeOut)
-    document.getElementById('timeout_text').innerHTML = "The timeout has been cleared!"
-    document.getElementById('timeout_text').style = "color:blue;"
-}
